@@ -11,7 +11,6 @@ class orderDataPrefixSubList(object):
             data = csv.reader(dataPrefix)
             for reg in data:
                 listaOrdenada.append(reg)
-            dataPrefix.close()
         listaOrdenada.sort()
         return listaOrdenada
 
@@ -111,7 +110,6 @@ class findPrefix(orderDataPrefixSubList):
             data = csv.reader(dataPrefix)
             for reg in data:
                 listaNumbers.append(reg)
-            dataPrefix.close()
         return listaNumbers
 
     def _get_PrefixData(self, callbis, ListaParaBusqueda):
